@@ -1,0 +1,146 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Oswald', sans-serif !important;
+  }
+.bg-noir{
+    background-color: black;
+}
+.bg-blanc{
+    background-color: white;
+}
+/*
+.text-menu{
+    color: rgb(131, 131, 131);
+}
+.text-menu:hover{
+    color: rgb(255, 255, 255);
+}
+*/
+.nav-link{
+    color: rgb(131, 131, 131);
+}
+.nav-link:hover{
+    color: white;
+}
+.bg-white{
+    background-color: white;
+    width: 25em;
+  }
+.text-decoration{
+    list-style-type: none;
+}
+
+.btn-outline-light{
+  border-radius: 0;
+  border: 3px solid white;
+}
+.btn-outline-light:hover{
+  font-weight: bold;
+}
+.btn-warning{
+  border-radius: 0;
+}
+.btn-warning:hover{
+  font-weight: bold;
+}
+.btn-white{
+  background-color: white;
+}
+.image-accueil{
+  border-radius: 0;
+}
+/*GALLERY*/
+
+.bg-jaune{
+    background: #ececec;
+}
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #e7bf0a;
+  }
+  
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .hovereffect:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    overflow: hidden;
+    padding: 0.5em 0;
+    background-color: transparent;
+  }
+  
+  .hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+  
+  .hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect a, .hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+  }
+  
+  .hovereffect:hover a, .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
